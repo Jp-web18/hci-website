@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentation Webpage</title>
+    <title>Presentation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navigation -->
     <nav>
-        <a href="#section1">Home</a>
-        <a href="#problem1">Problem 1</a>
-        <a href="#problem2">Problem 2</a>
-        <a href="#problem3">Problem 3</a>
-        <button id="toggleMode">🌙 Dark Mode</button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#problem1">Problem 1</a></li>
+            <li><a href="#problem2">Problem 2</a></li>
+            <li><a href="#problem3">Problem 3</a></li>
+        </ul>
     </nav>
 
-    <div id="section1" class="section">
-        <h1>Welcome to Our Presentation</h1>
-    </div>
-
-    <div id="problem1" class="section">
-        <div class="top-left">
-            <button class="toggle-btn" onclick="toggleContent('content1')">Problem</button>
-            <button class="toggle-btn" onclick="toggleContent('solution1')">Solution</button>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="content">
+            <h1>Welcome to Our Presentation</h1>
+            <p>Meet our team:</p>
+            <div class="image-container">
+                <img src="group-image.jpg" alt="Group Image">
+            </div>
         </div>
-        <div id="content1" class="content">
+    </section>
+
+    <!-- Problem 1 Section -->
+    <section id="problem1">
+        <div class="content">
             <h1>Problem 1</h1>
-            <p>Description of the first problem...</p>
-        </div>
-        <div id="solution1" class="content hidden">
-            <h1>Solution to Problem 1</h1>
-            <ul>
+            <p>Brief description of the problem.</p>
+            <h2>Solutions:</h2>
+            <ul class="solutions-list">
                 <li>Solution 1</li>
                 <li>Solution 2</li>
                 <li>Solution 3</li>
@@ -39,20 +43,15 @@
                 <li>Solution 20</li>
             </ul>
         </div>
-    </div>
+    </section>
 
-    <div id="problem2" class="section">
-        <div class="top-left">
-            <button class="toggle-btn" onclick="toggleContent('content2')">Problem</button>
-            <button class="toggle-btn" onclick="toggleContent('solution2')">Solution</button>
-        </div>
-        <div id="content2" class="content">
+    <!-- Problem 2 Section -->
+    <section id="problem2">
+        <div class="content">
             <h1>Problem 2</h1>
-            <p>Description of the second problem...</p>
-        </div>
-        <div id="solution2" class="content hidden">
-            <h1>Solution to Problem 2</h1>
-            <ul>
+            <p>Brief description of the problem.</p>
+            <h2>Solutions:</h2>
+            <ul class="solutions-list">
                 <li>Solution 1</li>
                 <li>Solution 2</li>
                 <li>Solution 3</li>
@@ -60,20 +59,15 @@
                 <li>Solution 20</li>
             </ul>
         </div>
-    </div>
+    </section>
 
-    <div id="problem3" class="section">
-        <div class="top-left">
-            <button class="toggle-btn" onclick="toggleContent('content3')">Problem</button>
-            <button class="toggle-btn" onclick="toggleContent('solution3')">Solution</button>
-        </div>
-        <div id="content3" class="content">
+    <!-- Problem 3 Section -->
+    <section id="problem3">
+        <div class="content">
             <h1>Problem 3</h1>
-            <p>Description of the third problem...</p>
-        </div>
-        <div id="solution3" class="content hidden">
-            <h1>Solution to Problem 3</h1>
-            <ul>
+            <p>Brief description of the problem.</p>
+            <h2>Solutions:</h2>
+            <ul class="solutions-list">
                 <li>Solution 1</li>
                 <li>Solution 2</li>
                 <li>Solution 3</li>
@@ -81,8 +75,12 @@
                 <li>Solution 20</li>
             </ul>
         </div>
-    </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Our Team. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
