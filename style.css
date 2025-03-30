@@ -26,10 +26,10 @@ html, body {
     position: relative;
 }
 
-#section1 { background: url('team.jpg') center/cover no-repeat; }
-#problem1 { background: url('problem1.jpg') center/cover no-repeat; }
-#problem2 { background: url('problem2.jpg') center/cover no-repeat; }
-#problem3 { background: url('problem3.jpg') center/cover no-repeat; }
+#section1 { background: url('/images/black-panther-3840x2160-13195.jpg') center/cover no-repeat; }
+#problem1 { background: url('/images/pexels-pixabay-35888.jpg') center/cover no-repeat; }
+#problem2 { background: url('/images/black-panther-3840x2160-13195.jpg') center/cover no-repeat; }
+#problem3 { background: url('/images/pexels-pixabay-35888.jpg') center/cover no-repeat; }
 
 nav {
     position: fixed;
@@ -41,7 +41,9 @@ nav {
     border-radius: 10px;
     display: flex;
     gap: 15px;
+    z-index: 1000; /* Ensure nav stays above everything */
 }
+
 
 nav a, #toggleMode {
     color: white;
